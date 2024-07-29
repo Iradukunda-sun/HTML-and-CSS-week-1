@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groceries</title>
+    <style>
+        body {
+            background-image: url(sales1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        form {
+            width: 70%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #161515;
+            border-radius: 10px;
+            box-shadow: none; 
+            background-color: #f0eaf1;
+        }
+
+        table {
+            width: 100%;
+
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #a5f5a3;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"],
+        button[type="reset"] {
+            padding: 10px 30px;
+            margin: 20px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #572150;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover,
+        button[type="reset"]:hover {
+            background-color: #3e8e41;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <form>
+        <h2>ADD SALE</h2>
+        <table>
+            <tr>
+                <td>Produce Name:</td>
+                <td><input type="text" id="produceName" name="produceName"></td>
+            </tr>
+               <br>
+            <tr>
+                <td>Tonnage Sold:</td>
+                <td><input type="number" id="tonnageSold" name="tonnageSold"></td>
+            </tr> 
+            <br>
+            <tr>
+                <td>Amount Paid:</td>
+                <td><input type="number" id="amountPaid" name="amountPaid"></td>
+
+            </tr>
+             <br>
+            <tr>
+                <td> Buyer's Name:</td>
+                <td><input type="text" id="buyersName" name="buyersName"></td>
+            </tr>
+            <br>
+            <tr>
+                <td> Sales Agent's Name:</td>
+                <td><input type="text" id="salesAgentName" name="salesAgentName"></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" id="date" name="date"></td>
+
+            </tr>
+            <br>
+            <tr>
+                <td> Time:</td>
+                <td> <input type="time" id="time" name="time"></td>
+            </tr>
+
+
+
+
+
+
+
+          
+        </table>
+        <button type="submit" id="save_button">Save</button>
+
+        <button type="reset" id="cancel_button">Cancel</button>
+    </form>
+
 </body>
+
 </html>
