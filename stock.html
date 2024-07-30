@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groceries </title>
+    <title>Groceries</title>
+    <style>
+         table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    tr.low-stock {
+      background-color: #ffcccc;
+    }
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        
+    }
+    </style>
 </head>
 <body>
+    <h1>View Stock</h1>
+    <table id="stock-table">
+      <thead>
+        <tr>
+          <th>Produce Name</th>
+          <th>Type</th>
+          <th>Current Stock (Tons)</th>
+          <th>Branch Name</th>
+        </tr>
+      </thead>
+      <tbody id="stock-data">
+        <!-- data will be rendered here -->
+      </tbody>
+    </table>
+  
+    <script src="stock.js"></script>   
     
 </body>
 </html>
