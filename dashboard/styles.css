@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1d2634;
-    color: #9e9ea4;
+    background-color: #c2cfe4;
+    color: #3c3c9b;
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -225,4 +225,18 @@ body {
       display: none;
     }
   }
-  
+
+  button[type="button"] {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fdfafd;
+    color: #41123d;
+    cursor: pointer;
+    position:inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  button[type="button"]:hover {
+    background-color: #f108e6;
+}

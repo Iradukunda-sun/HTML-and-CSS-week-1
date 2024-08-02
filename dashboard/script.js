@@ -81,7 +81,7 @@ const barChartOptions = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+    categories: ['Beans', 'Grain-maize', 'Soybeans', 'Gnuts', 'Cowpeas'],
     title: {
       style: {
         color: '#f5f7ff',
