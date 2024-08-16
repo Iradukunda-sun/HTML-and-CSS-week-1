@@ -1,0 +1,26 @@
+{
+  "name": "happy-hoe-groceries-project",
+  "version": "1.0.0",
+  "description": "Records keeping project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iradukunda-sun/HTML-and-CSS-week-1.git"
+  },
+  "keywords": [
+    "HHG"
+  ],
+  "author": "Iradukunda-sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iradukunda-sun/HTML-and-CSS-week-1/issues"
+  },
+  "homepage": "https://github.com/Iradukunda-sun/HTML-and-CSS-week-1#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

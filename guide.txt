@@ -1,0 +1,12 @@
+1. Create view(pug)
+
+2. Create route  -make sure to export the router
+
+    a.if the view is a form
+        (i) create model/Schema -make sure to export the model
+        (ii) import model in form routes
+        (iii) import model in routes for retrieving data
+
+3. Import Routes into server file
+
+4. Add Routes to app.use

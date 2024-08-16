@@ -4,22 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groceries</title>
+   <style>
+    .user-management-container {
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#user-table th, #user-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#add-user-button {
+    background-color: #6a0983;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-user-button:hover {
+    background-color: #45a049;
+}
+   </style>
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container mt-5">
-        <h1>User Management</h1>
-        <button class="btn btn-primary mb-3" onclick="showAddUserModal()">Add New User</button>
-        <table class="table table-striped" id="usersTable">
+    <div class="user-management-container">
+        <!-- Header Section -->
+        <h1 class="header">User Management</h1>
+        <!-- Table Section -->
+        <table id="user-table">
             <thead>
                 <tr>
                     <th>Username</th>
@@ -27,51 +65,16 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody id="tableBody">
-                <!-- Table content will be generated dynamically -->
+            <tbody id="user-table-body">
+                <!-- Rows will be added dynamically -->
             </tbody>
         </table>
-    </div>
-
-    <!-- Modal for adding/editing users -->
-    <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="userModalLabel">Add/Edit User</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="userForm">
-                        <input type="hidden" id="userId" name="userId">
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="role">Role</label>
-                            <select class="form-control" id="role" name="role" required>
-                                <option value="">Select Role</option>
-                                <option value="Admin">Admin</option>
-                                <option value="User">User</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="saveUser()">Save changes</button>
-                </div>
-            </div>
+        <!-- Buttons Section -->
+        <div class="buttons-container">
+            <button id="add-user-button">Add User</button>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="user-management.js"></script>
-</body>
-</html>
 </body>
 </html>

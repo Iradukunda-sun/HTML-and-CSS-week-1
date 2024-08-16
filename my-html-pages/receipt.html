@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+    <style>
+        .receipt-container {
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header-section img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.sale-details-section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.customer-details-section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.itemized-list-section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#itemized-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#itemized-list-table th, #itemized-list-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.summary-section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.payment-details-section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-section {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid 
+}
+    </style>
+ 
+</head>
+<body>
+    <div class="receipt-container">
+        <!-- Header Section -->
+        <div class="header-section">
+            <h1>Happy Hoe Grocery.</h1>
+            <img src="logo.png" alt="Company Logo">
+            <p>Branch Name: <span id="branch-name"></span></p>
+            <p>Address: <span id="branch-address"></span></p>
+            <p>Contact Info: <span id="branch-contact"></span></p>
+        </div>
+        <!-- Sale Details Section -->
+        <div class="sale-details-section">
+            <p>Receipt Number: <span id="receipt-number"></span></p>
+            <p>Date and Time: <span id="date-time"></span></p>
+            <p>Sales Agent: <span id="sales-agent"></span></p>
+        </div>
+        <!-- Customer Details Section -->
+        <div class="customer-details-section">
+            <p>Customer Name: <span id="customer-name"></span></p>
+            <p>Customer Contact: <span id="customer-contact"></span></p>
+        </div>
+        <!-- Itemized List Section -->
+        <div class="itemized-list-section">
+            <table id="itemized-list-table">
+                <thead>
+                    <tr>
+                        <th>Produce Name</th>
+                        <th>Type</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="itemized-list-body">
+                </tbody>
+            </table>
+        </div>
+        <!-- Summary Section -->
+        <div class="summary-section">
+            <p>Subtotal: <span id="subtotal"></span></p>
+            <p>Tax: <span id="tax"></span></p>
+            <p>Discounts: <span id="discounts"></span></p>
+            <p>Total Amount: <span id="total-amount"></span></p>
+        </div>
+        <!-- Payment Details Section -->
+        <div class="payment-details-section">
+            <p>Payment Method: <span id="payment-method"></span></p>
+            <p>Amount Paid: <span id="amount-paid"></span></p>
+            <p>Change Due: <span id="change-due"></span></p>
+        </div>
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <p>Thank you for shopping with us!</p>
+            <p>Return policy: Returns accepted within 7 days.</p>
+            <p>Signature: ______________________________________</p>
+        </div>
+    </div>
+
+</body>
+</html>

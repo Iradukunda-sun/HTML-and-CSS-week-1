@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groceries</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
     <style>
         body {
             background-image: url(procurement.jpg);
@@ -72,23 +73,60 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><strong>HAPPY HOE GROCERIES</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Stock Status</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a> -->
+              <!-- </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
     <form>
         <h2>PROCUREMENT RECORDS</h2>
+        <br>
         <table>
             <tr>
-                <td>Produce Name:</td>
-                <td><input type="text" id="produce_name" name="produce_name" required></td>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Product</option>
+                    <option value="bean">Beans</option>
+                    <option value="maize">Maize</option>
+                    <option value="cow-peas">Cow peas</option>
+                    <option value="g-nuts">G-nuts</option>
+                    <option value="rice">Rice</option>
+                    <option value="soy">Soy beans</option>
+                  </select>
+                <!-- <td>Produce Name:</td>
+                <td><input type="text" id="produce_name" name="produce_name" required></td> -->
             </tr>
+            <br>
             <tr>
-                <td>Type:</td>
-                <td><input type="text" id="type" name="type" required></td>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Type</option>
+                    <option value="grain">Grain</option>
+                    <option value="legume">Legume</option>
             </tr>
             <tr>
                 <td>Date:</td>
                 <td><input type="date" id="date" name="date" required></td>
             </tr>
             <tr>
-                <td>Tonnage:</td>
+                <td>Tonnage in kg:</td>
                 <td><input type="number" id="tonnage" name="tonnage" required></td>
             </tr>
             <tr>
@@ -107,12 +145,18 @@
                 <td>Contact Info:</td>
                 <td><input type="text" id="contact_info" name="contact_info" required></td>
             </tr>
+            <tr>
+                <td>Price to be sold at:</td>
+                <td><input type="text" id="branch_name" name="branch_name" required></td>
+            </tr>
         </table>
         <button type="submit" id="save_button">Save</button>
 
         <a href="./dashboard1.html"><button type="reset" id="cancel_button">Cancel</button></a>
     </form>
 
+
+    <script src="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 </body>
 
 </html>
