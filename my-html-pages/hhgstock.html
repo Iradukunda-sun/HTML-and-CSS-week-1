@@ -19,6 +19,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  
 }
 
 .card {
@@ -26,6 +27,8 @@
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .card h2 {
@@ -36,35 +39,44 @@
   font-size: 18px;
   font-weight: bold;
   color: #666;
-}   
+}  
+h1 {
+  text-align: center;
+} 
     </style>
 </head>
 <body>
     <div class="stock-page">
-        <h1>Stock Page</h1>
+        <h1>STOCK</h1>
         <div class="card-grid">
           <div class=" card">
             <h2>Beans</h2>
+            <img src="/images/redbeans.png" alt="redbeans">
             <p>Current Stock: 500 kg</p>
           </div>
           <div class="card">
             <h2>Maize</h2>
+            <img src="/images/maize.png" alt="maize">
             <p>Current Stock: 2000 kg</p>
           </div>
           <div class="card">
             <h2>Rice</h2>
+            <img src="/images/rice.png" alt="rice">
             <p>Current Stock: 1500 kg</p>
           </div>
           <div class="card">
             <h2>Soybeans</h2>
+            <img src="/images/soy.png" alt="soybeans">
             <p>Current Stock: 800 kg</p>
           </div>
           <div class="card">
             <h2>Cow Peas</h2>
+            <img src="/images/cowpeas.png" alt="cowpeas">
             <p>Current Stock: 300 kg</p>
           </div>
           <div class="card">
             <h2>Gnuts</h2>
+            <img src="/images/g-nuts.png" alt="gnuts">
             <p>Current Stock: 1000 kg</p>
           </div>
         </div>
